@@ -1,0 +1,1288 @@
+@font-face {
+    font-family:"Visby ELight" ;
+    src: url("fonts/VisbyRoundCF-ExtraLight.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family:"Visby Light" ;
+    src: url("fonts/VisbyRoundCF-Light.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family:"Visby Regular" ;
+    src: url("fonts/VisbyRoundCF-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family:"Visby Medium" ;
+    src: url("fonts/VisbyRoundCF-Medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family:"Visby DemiBold" ;
+    src: url("fonts/VisbyRoundCF-DemiBold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family:"Visby Bold" ;
+    src: url("fonts/VisbyRoundCF-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family:"Visby EBold" ;
+    src: url("fonts/VisbyRoundCF-ExtraBold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  *{
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body, main {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+ 
+  header{
+      position: relative;
+      width: 100vw;
+      height: 86px;
+      background-color: #20242C;
+      z-index: 2;
+  }
+
+  button{
+      cursor: pointer;
+  }
+
+  #username{
+      color: #75F7AC;
+      font-family: "Visby DemiBold";
+      letter-spacing: 0px;
+  }
+
+  nav{
+      position: absolute;
+      width: 0;
+      height: 0;
+      z-index: 5;
+      background-color: #20242C;
+      display: block;
+      top: 0;
+      left: 0;
+      overflow-y: scroll;
+  }
+
+  nav ul{
+      width: 275px;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0;
+      left: 0;
+      list-style-type:none;
+      margin-top: 60%;
+      padding-left: 0px;
+  }
+  nav li{
+      display: none;
+      font-family: "Visby Bold";
+      font-size:32px;
+      color: #F3CA3E;
+      margin-bottom: 18px;
+      margin-top: 18px;
+  }
+
+  nav li a{
+      text-decoration: none;
+      color: #F3CA3E;
+  }
+
+  nav li a:hover{
+      color: #75F7AC;
+  }
+
+  #divider{
+      width: 100%;
+      height: 3px;
+      background-color: #75F7AC;
+      border-radius: 1.5px;
+  }
+
+
+
+  #hello{
+    font-family: "Visby Regular";
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    position: absolute;
+    top: 44.5px;
+    color:#F2F2F2 ;
+    left: 24px;   
+  }
+
+  #logo{
+      font-family: "Visby DemiBold";
+      font-size: 20px;
+      letter-spacing: 0.8px;
+      position: absolute;
+      top: 44.5px;
+      color:#F2F2F2 ;
+      right: 75px;
+  }
+
+  #hamburger{
+    position: absolute;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+	justify-content: center;
+    cursor: pointer;
+    right: 24px;
+    top: 35px;
+}
+
+#bar{
+    position: absolute;
+    width: 77%;
+    background-color: black;
+    height: 3px;
+    border-radius: 1.25px;
+    background-color: #F2F2F2;
+}
+
+#bar::before{
+	position: absolute;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 3px;
+	top:-7px;
+	border-radius: 1.25px;
+	transition: 0.4s;
+    background-color: #F2F2F2;
+}
+
+#bar::after{
+	position:absolute;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 3px;
+	top:7.4px;
+	border-radius: 1.25px;
+	transition: 0.4s;
+    background-color: #F2F2F2;
+}
+
+#close{
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background-color:none;
+    top: 50.37px;
+    right: 24px;
+    transform: rotate(45deg);
+}
+
+
+
+#x::after{
+	position:absolute;
+	content: '';
+	display: block;
+	width: 73%;
+	height: 3.5px;
+	background-color: #F3CA3E;
+	border-radius: 1.5px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+}
+
+#x::before{
+	position:absolute;
+	content: '';
+	display: block;
+	width: 73%;
+	height: 3.5px;
+	background-color: #F3CA3E;
+	border-radius: 1.5px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+    transform: rotate(90deg);
+}
+
+
+#slidePanel{
+    position: relative;
+    top: -210px;
+    height: 210px;
+    left: 0;
+    transition: 1s;
+    z-index: 1;
+    background-color:#75F7AC ;
+}
+
+#moodSlidePanel{
+    position: absolute;
+    width: 100vw;
+    top: -100%;
+    height: 100%;
+    left: 0;
+    transition: 1s;
+    z-index: 1;
+    background-color:#F3CA3E;
+}
+
+
+#moodCharacter img{
+position: absolute;
+top: -230px;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+max-width: 400px;
+}
+
+#moodTxt{
+    text-align: center;
+    top: 380px;
+}
+
+#moodTxt p{
+    font-family: "Visby Medium";
+    font-size: 16px;
+    color: #29133B;
+    letter-spacing: 0.7px;
+}
+
+#moodTxt h2{
+    font-family: "Visby EBold";
+    font-size: 50px;
+    color:#29133B ;
+    letter-spacing: -0.5px;
+}
+
+#submitMood{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding-bottom: 2px;
+    top: 530px;
+    font-family: "Visby EBold";
+    font-size: 18px;
+    color:#29133B;
+    background-color: rgba(0,0,0,0);
+    border: 2.5px solid #29133B;
+    width: 178px;
+    height: 36px;
+    border-radius: 25px;
+}
+
+#placesSlidePanel{
+    position: absolute;
+    width: 100vw;
+    height: 137px;
+    top: 0px;
+    left: 0px;
+    transition: 1s;
+    z-index: 1;
+    background-color:/*#8731d1*/#CA0000;
+}
+
+/* SLIDER */
+
+#slidecontainer{
+    text-align: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 490px;
+}  
+
+.slider {
+    width: 176px;
+    height: 15px;
+    -webkit-appearance: none;
+    background: #401D5E;
+    outline: none;
+    border-radius: 25px;
+    border-style: none;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #F2F2F2;
+    cursor: pointer;
+  }
+
+  /* FIM CSS SLIDER*/
+  
+
+#filters{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    right: 24px;
+}
+
+#filters button{
+    box-sizing: content-box;
+    font-family: "Visby DemiBold";
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    background-color:#6BDF9C ;
+    border: 2px solid #F2F2F2;
+    height: 23.36px;
+    border-radius: 15px;
+    padding: 1px 15px;
+    margin: 4px;
+    color: #8731d1;
+    
+}
+
+.selectedFilter{
+    background-color: #F2F2F2 !important;
+}
+
+#routeOptns{
+    position: relative;
+    top: 100px;
+    left: 24px;
+    right: 24px;
+}
+
+#locationImg{
+    position: absolute;
+    top: 5px;
+}
+
+#routeOptns input{
+position: absolute;
+display: block;
+width: 60%;
+padding-bottom: 9px;
+top: 5px;
+left: 34px;
+border: 0px;
+border-bottom: 2px solid #8731d1 ;
+border-radius: 1px;
+background-color: #75F7AC;
+font-family: "Visby Regular";
+font-size: 12px;
+color:#29133B;
+letter-spacing: 0.5px;
+}
+
+#routeOptns input:nth-of-type(1){
+    top: 60px;
+}
+
+::placeholder{
+    font-family: "Visby Regular";
+    font-size: 12px;
+    color: #29133B;
+    padding-bottom: 1px;
+}
+
+#go{
+    position: absolute;
+    padding: 15px;
+    border-radius: 25px;
+    border:0px;
+    background-color: #8731d1;
+    right: 48px;
+    top: 31px;
+    font-family: "Visby DemiBold";
+    font-size: 18px;
+    color:#F2F2F2;
+    letter-spacing: 0.7px;
+}
+
+
+#outTab{
+    position: relative;
+    background-color: #75F7AC;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+    height: 60px;
+    transition: 1s;
+}
+
+#outTab h2{
+    position: absolute;
+    font-family: "Visby Medium";
+    font-size: 20px;
+    color: #29133B;
+    top: 20px;
+    left: 24px;
+    right: 24px;
+}
+
+#outTab h2 span{
+    font-family: "Visby EBold";
+}
+
+#outTab button{
+    position: absolute;
+    top: 17px;
+    right: 24px;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    border:0px;
+    background-color: #8731d1;
+
+}
+
+#moodOutTab{
+    position: absolute;
+    background-color: #F3CA3E;
+    width: 100vw;
+    top: 86px;
+    left:100%;
+    right: 0px;
+    z-index: 2;
+    height: 60px;
+    transition: 1s;
+    
+}
+
+#moodOutTab h2{
+    position: absolute;
+    font-family: "Visby Medium";
+    font-size: 20px;
+    color: #29133B;
+    top: 20px;
+    left: 24px;
+    right: 24px;
+}
+
+#moodOutTab h2 span{
+    font-family: "Visby EBold";
+}
+
+#moodOutTab button{
+    position: absolute;
+    top: 17px;
+    right: 24px;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    border:0px;
+    background-color: #8731d1;
+
+}
+
+#placesOutTab{
+    position: absolute;
+    background-color: /*#8731d1*/ #CA0000;
+    width: 100vw;
+    top: 86px;
+    left:200%;
+    right: 0px;
+    z-index: 2;
+    height: 60px;
+    transition: 1s;
+}
+
+#placesOutTab h2{
+    position: absolute;
+    font-family: "Visby Medium";
+    font-size: 20px;
+    color: #F2F2F2;
+    top: 20px;
+    left: 24px;
+    right: 24px;
+}
+
+#placesOutTab h2 span{
+    font-family: "Visby EBold";
+}
+
+#placesSlidePanel input{
+    position: absolute;
+    width: 235px;
+    height: 101px;
+    padding-bottom: 9px;
+    top: 6px;
+    left: 24px;
+    padding-left: 16px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #781103;
+    opacity: 0.8;
+    font-family: "Visby Regular";
+    font-size: 12px;
+    color:#F2F2F2;
+    letter-spacing: 0.5px;
+    }
+
+
+    #placesSlidePanel input:focus{
+        outline: none;
+    }
+
+    #placesSlidePanel label{
+        position: absolute;
+        top: 17px;
+        color: #F2F2F2;
+        font-family: "Visby Regular";
+        font-size: 12px;
+        left: 40px;
+        z-index: 2;
+    }
+
+    #placesSlidePanel button{
+        position: absolute;
+        font-family: "Visby DemiBold";
+        font-size: 14px;
+        width: 78px;
+        height: 28px;
+        right: 24px;
+    }
+
+    #send{
+        background-color: #F2F2F2;
+        border: 0px;
+        border-radius: 25px;
+        color: /*#8731d1*/ #CA0000;
+        top: 78.5px;
+    }
+
+
+#placesOutTab button{
+    position: absolute;
+    top: 17px;
+    right: 24px;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    border:0px;
+    background-color: #F2F2F2;
+
+}
+
+#arrowDown div{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color: #F2F2F2;
+	border-radius: 1px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(90deg);
+}
+
+#arrowDown div::before{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color: #F2F2F2;
+	border-radius: 1px;
+    top:-2px;
+    left: 9px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(45deg);
+}
+
+#arrowDown div::after{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color: #F2F2F2;
+	border-radius: 1px;
+    top: 2px;
+    left: 9px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(-45deg);
+}
+
+#arrowUp{
+    transform: rotate(180deg);
+}
+
+#arrowUp div{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color: #F2F2F2;
+	border-radius: 1px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(90deg);
+}
+
+#arrowUp div::before{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color: #F2F2F2;
+	border-radius: 1px;
+    top:-2px;
+    left: 9px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(45deg);
+}
+
+#arrowUp div::after{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color: #F2F2F2;
+	border-radius: 1px;
+    top: 2px;
+    left: 9px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(-45deg);
+}
+
+#arrowDown2 div{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color: #F2F2F2;
+	border-radius: 1px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(90deg);
+}
+
+#arrowDown2 div::before{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color: #F2F2F2;
+	border-radius: 1px;
+    top:-2px;
+    left: 9px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(45deg);
+}
+
+#arrowDown2 div::after{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color: #F2F2F2;
+	border-radius: 1px;
+    top: 2px;
+    left: 9px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(-45deg);
+}
+
+#arrowUp2{
+    transform: rotate(180deg);
+}
+
+#arrowUp2 div{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color: #F2F2F2;
+	border-radius: 1px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(90deg);
+}
+
+#arrowUp2 div::before{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color: #F2F2F2;
+	border-radius: 1px;
+    top:-2px;
+    left: 9px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(45deg);
+}
+
+#arrowUp2 div::after{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color: #F2F2F2;
+	border-radius: 1px;
+    top: 2px;
+    left: 9px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(-45deg);
+}
+
+#arrowDown3 div{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color: /*#8731d1*/ #CA0000;
+	border-radius: 1px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(90deg);
+}
+
+#arrowDown3 div::before{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color: /*#8731d1*/#CA0000;
+	border-radius: 1px;
+    top:-2px;
+    left: 9px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(45deg);
+}
+
+#arrowDown3 div::after{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color:#CA0000;
+	border-radius: 1px;
+    top: 2px;
+    left: 9px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(-45deg);
+}
+
+#arrowUp3{
+    transform: rotate(180deg);
+}
+
+#arrowUp3 div{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color:#CA0000;
+	border-radius: 1px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(90deg);
+}
+
+#arrowUp3 div::before{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color:#CA0000;
+	border-radius: 1px;
+    top:-2px;
+    left: 9px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(45deg);
+}
+
+#arrowUp3 div::after{
+    position:absolute;
+	content: '';
+	display: block;
+	width: 45%;
+	height: 2px;
+	background-color:#CA0000;
+	border-radius: 1px;
+    top: 2px;
+    left: 9px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(-45deg);
+}
+
+#map{
+    position:absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+footer{
+    position: absolute;
+    background-color: #20242C;
+    bottom: 0;
+    width: 100vw;
+    height: 65px;
+    text-align: center;
+    z-index: 3;
+}
+
+footer button{
+    font-family: "Visby EBold";
+    font-size: 16px;
+    color: #F2F2F2;
+    background:none;
+    border-style: none;
+    width: 109px;
+    top: 16.25px;
+}
+
+.goingBtnActive{
+    background-color: #75F7AC;
+    height: 35px;
+    border-radius: 25px;
+    color: #20242C !important;
+}
+
+.moodBtnActive{
+    background-color: #F3CA3E;
+    height: 35px;
+    border-radius: 25px;
+    color: #20242C !important;
+}
+
+.placesBtnActive{
+    background-color: /*#8731d1*/ #CA0000;
+    height: 35px;
+    border-radius: 25px;
+}
+
+/*loading Panel */
+
+@keyframes loader {
+    0% {
+      -webkit-transform: scale3d(0, 1, 1) translate3d(0, 0, 0);
+      transform: scale3d(0, 1, 1) translate3d(0, 0, 0);
+    }
+    50% {
+      -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+      transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1) translate3d(100%, 0, 0);
+      transform: scale3d(1, 1, 1) translate3d(100%, 0, 0);
+    }
+  }
+  
+  .css-loader {
+    position: absolute;
+    top: 78px;
+    left: 24px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    
+  }
+  
+  .css-loader .css-loader-line {
+    display: block;
+    width: 180px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: opacity 0.3s cubic-bezier(0.4, 0, 0, 1);
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0, 1);
+    height: 3.5px;
+  }
+  
+  .css-loader .css-loader-line:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 3.5px;
+    background-color: #F2F2F2;
+    transform: scale3d(0, 1, 1) translate3d(0, 0, 0);
+    animation: loader 2s cubic-bezier(0.4, 0, 0, 1) infinite;
+    transform-origin: left center;
+  }
+
+  #finished{
+    position: absolute;
+    box-sizing: content-box;
+    font-family: "Visby DemiBold";
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    background-color:#6BDF9C ;
+    border: 2px solid #8731d1;
+    height: 23.36px;
+    border-radius: 15px;
+    padding: 1px 15px;
+    margin: 4px;
+    color: #8731d1;
+    top: 60px;
+    right: 55px;
+    
+}
+
+#close2{
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background-color:none;
+    top: 54px;
+    right: 13px;
+    transform: rotate(45deg);
+}
+
+
+
+#x2::after{
+	position:absolute;
+	content: '';
+	display: block;
+	width: 60%;
+	height: 3.5px;
+	background-color: #8731d1;
+	border-radius: 2px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+}
+
+#x2::before{
+	position:absolute;
+	content: '';
+	display: block;
+	width: 60%;
+	height: 3.5px;
+	background-color: #8731d1;
+	border-radius: 2px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+    transform: rotate(90deg);
+}
+
+/*ESTILO DO MAPA*/
+
+.customPopup p{
+    font-family: "Visby DemiBold";
+    font-size: 16px;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: #20242C;
+}
+
+#scdCustomPopup{
+    
+    word-wrap: break-word;
+    word-break: break-all;
+    
+}
+
+#popupFilter{
+    font-family: "Visby EBold";
+    font-size: 12px;
+    text-decoration: underline;
+    color: #29133B;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#pMoodTxt{
+    font-family: "Visby Medium";
+    font-size: 12px;
+    color: #29133B;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#selMoodPopup{
+    font-family: "Visby EBold";
+    font-size: 40px;
+    color: #29133B;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/*ESTILO DE OUTROS FICHEIROS HTML*/
+
+#abtSafeHerBody{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: #20242C;
+      display: block;
+      top: 0;
+      left: 0;
+      overflow-y:scroll !important ;
+}
+
+#aboutSafeHer h1{
+font-family: "Visby DemiBold";
+font-size: 32px;
+color:#F3CA3E ;
+margin-bottom: 26px;
+}
+
+article{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 262px;
+    top: 200px;
+    padding-bottom: 36px;
+}
+
+#aboutSafeHer p{
+    font-family: "Visby Regular";
+    font-size: 16px;
+    color: #F2F2F2;
+    letter-spacing: 0.5px;
+}
+
+#aboutSafeHer h2{
+    font-family: "Visby DemiBold";
+    font-size: 20px;
+    color: #F3CA3E ;
+    margin-top: 26px;
+    
+}
+
+#aboutSafeHer h3{
+    font-family: "Visby DemiBold";
+    font-size: 16px;
+    color: #F2F2F2;
+    margin-top: 26px;
+}
+
+#helpEmail{
+    font-family: "Visby DemiBold" !important;
+    font-size: 20px;
+    color: #F2F2F2;
+    margin-bottom: 26px;
+}
+
+.blue{
+    color:#6BDF9C !important ;
+}
+
+#aboutSafeHer h4{
+    font-family: "Visby Regular";
+    font-size: 16px;
+    color: #6BDF9C;
+}
+
+.big{
+    font-size: 24px !important;
+    margin-bottom: 26px;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-height: 790px) {
+    #moodTxt{
+        top: 320px;
+    }
+
+    #slidecontainer{
+        top: 410px;
+    }
+
+    #submitMood{
+        top: 450px;
+    }
+
+    #moodTxt p{
+        padding: 0;
+        margin: 0;
+    }
+
+    #moodTxt h2{
+        padding: 0;
+        margin: 0;
+        font-size: 40px;
+    }
+  }
+
+  @media only screen and (max-height: 690px) {
+    #moodCharacter img{
+        position: absolute;
+        top: -150px;
+        width:70%;
+    }
+
+    #moodTxt{
+        top: 270px;
+    }
+
+    #slidecontainer{
+        top: 355px;
+    }
+
+    #submitMood{
+        top: 390px;
+    }
+
+    #moodTxt p{
+        padding: 0;
+        margin: 0;
+    }
+
+    #moodTxt h2{
+        padding: 0;
+        margin: 0;
+        font-size: 40px;
+    }
+
+    
+
+  }
+
+  @media only screen and (max-height: 613px) {
+    #moodCharacter img{
+        position: absolute;
+        top: -170px;
+        width:70%;
+    }
+
+    #moodTxt{
+        top: 255px;
+    }
+
+    #slidecontainer{
+        top: 335px;
+    }
+
+    #submitMood{
+        top: 365px;
+    }
+
+    #moodTxt p{
+        padding: 0;
+        margin: 0;
+    }
+
+    #moodTxt h2{
+        padding: 0;
+        margin: 0;
+        font-size: 40px;
+    }
+
+    
+
+  }
+
+  @media only screen and (max-width: 373px) {
+    #moodCharacter img{
+        margin-top: 6%;
+        max-width: 340px;
+    }
+  }
+
+  @media only screen and (max-width: 366px) {
+    #placesSlidePanel input{
+        width:60% ;
+    }
+  }
+
+

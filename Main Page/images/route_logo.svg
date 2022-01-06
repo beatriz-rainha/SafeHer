@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="79.829" viewBox="0 0 16 79.829">
+  <defs>
+    <rect id="rect-1" width="16" height="79.829" x="0" y="0"/>
+    <ellipse id="ellipse-2" cx="8" cy="7.788" rx="8" ry="7.788"/>
+    <mask id="mask-3" x="0" y="0" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="16" height="79.829" x="0" y="0" fill="black"/>
+      <use fill="white" xlink:href="#ellipse-2"/>
+    </mask>
+    <rect id="rect-4" width="16" height="22.391" x="0" y="57.438"/>
+    <path id="path-5" fill-rule="evenodd" d="M16 65.22647059c0 4.29844407-8 14.60294117-8 14.60294117S0 69.52491466 0 65.2264706c0-4.29844407 3.5846798-7.7882353 8-7.7882353s8 3.48979123 8 7.7882353z"/>
+    <mask id="mask-6" x="0" y="0" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="16" height="79.829" x="0" y="0" fill="black"/>
+      <use fill="white" xlink:href="#path-5"/>
+    </mask>
+  </defs>
+  <g>
+    <use fill-opacity="0" stroke="rgb(135,49,209)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" mask="url(#mask-3)" xlink:href="#ellipse-2"/>
+    <g>
+      <g>
+        <use fill="rgb(135,49,209)" xlink:href="#path-5"/>
+        <use fill-opacity="0" stroke="rgb(135,49,209)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" mask="url(#mask-6)" xlink:href="#path-5"/>
+      </g>
+      <ellipse cx="8" cy="65.226" fill="rgb(117,247,172)" rx="5" ry="4.868"/>
+    </g>
+    <ellipse cx="8" cy="26.285" fill="rgb(135,49,209)" rx="3" ry="2.921"/>
+    <ellipse cx="8" cy="46.729" fill="rgb(135,49,209)" rx="3" ry="2.921"/>
+    <ellipse cx="8" cy="36.994" fill="rgb(135,49,209)" rx="3" ry="2.921"/>
+  </g>
+</svg>

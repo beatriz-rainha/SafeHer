@@ -1,0 +1,321 @@
+
+@font-face {
+  font-family:"Visby ELight" ;
+  src: url("fonts/VisbyRoundCF-ExtraLight.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Visby Light" ;
+  src: url("fonts/VisbyRoundCF-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Visby Regular" ;
+  src: url("fonts/VisbyRoundCF-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Visby Medium" ;
+  src: url("fonts/VisbyRoundCF-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Visby DemiBold" ;
+  src: url("fonts/VisbyRoundCF-DemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Visby Bold" ;
+  src: url("fonts/VisbyRoundCF-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Visby EBold" ;
+  src: url("fonts/VisbyRoundCF-ExtraBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body, main {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+header{
+  position: absolute;
+  left:0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 115px;
+  width: 233px;
+}
+
+p{
+  font-family: "Visby Regular";
+  font-size: 12px;
+  color: #F2F2F2;
+  letter-spacing: 0.7px;
+}
+
+p a{
+  font-family: "Visby DemiBold";
+  text-decoration: none;
+  color: #F2F2F2;
+}
+
+
+#logNregBtns{
+  position: relative;
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 86%;
+  z-index: 3;
+  transition: 1s;
+}
+
+#labels{
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  padding-bottom: 8px;
+}
+
+#lgLbl{
+  position: absolute;
+  width: 50%;
+  left: 0;
+  text-align: left;
+  font-size: 14px;
+}
+
+#rgLbl{
+  position: absolute;
+  width: 50%;
+  right: 0;
+  text-align: left;
+  font-size: 14px;
+}
+
+
+#buttons{
+position: relative;
+width: 100%;
+z-index: 1;
+margin-top: 14px;
+background-color:rgba(0, 0, 0, 0);
+}
+
+#lgBar{
+width: 50%;
+height: 10px;
+float: left;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border: 2px solid #F2F2F2;
+background-color:rgba(0, 0, 0, 0) ;
+}
+
+#rgBar{
+width: 50%;
+height: 10px;
+float: right;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+background-color:rgba(0, 0, 0, 0) ;
+border: 2px solid #F2F2F2;
+}
+
+
+#logNreg{
+  position: absolute;
+  bottom:-68%;
+  width: 100%;
+  height: 68%;
+  background-color: rgba(17, 19, 26, 0.8);
+  transition: 1000ms;
+}
+
+
+#bar_cont{
+  width: 100vw;
+  position: relative;
+}
+
+#bar{
+  position: absolute;
+  width: 57px;
+  height: 5px;
+  background-color: #F2F2F2;
+  left:0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+#loginBoxes{
+    position: absolute;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 136px;
+    left: 0;
+    right: 0;
+}
+
+#registerBoxes{
+  position: absolute;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 136px;
+  left: 0;
+  right: 0;
+}
+
+
+form label{
+    position: absolute;
+    z-index: 1;
+    left: 8px;
+    margin-top: 4px;
+    display: block;
+    font-family: "Visby Regular";
+    font-size: 12px;
+    color: #F2F2F2;
+    letter-spacing: 1px;
+}
+
+label{
+  font-family: "Visby Regular";
+  font-size: 14px;
+  color: #F2F2F2;
+}
+
+input{
+    width: 100%;
+    display: block;
+    background-color: #262A34;
+    border: none;
+    height: 58px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-family: "Visby Regular";
+    padding-left: 8px;
+    font-size: 12px;
+    color: #8731d1;
+    letter-spacing: 0.5px;
+}
+
+input:focus{
+  outline: none;
+}
+
+#submit{
+  background-color: rgba(17, 19, 26, 0);
+  width: 100%;
+  height: 44px;
+  border-radius: 20px;
+  border: 2px solid #8731d1;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  font-family: "Visby DemiBold";
+  color: #F2F2F2;
+  font-size: 13px;
+  letter-spacing: 0.7px;
+}
+
+.psw{
+  text-align: right;
+}
+
+#scdRegister{
+  text-align: center;
+}
+
+#scdLogin{
+  text-align: center;
+}
+
+.labelIsActive{
+  color: #F3CA3E;
+  font-family: "Visby DemiBold";
+}
+
+.barIsActive{
+  background-color: #F3CA3E !important;
+  border-style: none !important;
+}
+
+/* style da parte 3d*/
+
+
+#character{
+  background-color:#5A2B82;
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  }
+
+#mascot{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: -50px;
+}
+
+			
+  @media only screen and (max-height: 690px) {
+    #loginBoxes{
+      margin-top: 90px;
+    }
+
+   #submit{
+     margin-top: 10px;
+   }
+
+   #registerBoxes{
+     margin-top: 90px;
+   }
+
+   #scdLogin{
+     top: -15px;
+   }
+  }
+
+  

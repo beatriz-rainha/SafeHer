@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="MariaJorge">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SafeHer Main Hall</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main>
+    <header>
+    <img src="images/safeher wlogo.svg" alt="SafeHer logo">
+    </header>
+
+    <section id="character">
+        <img id="mascot" src="images/character main hall.png" alt="SafeHer mascot">
+    </section>
+
+    <section id="logNregBtns">
+        <div id="labels">
+            <label id="lgLbl">login</label>
+            <label id="rgLbl">register</label>
+        </div>
+        <div id="buttons">
+            <button id="lgBar"></button>
+            <button id="rgBar"></button>
+        </div>   
+    </section>
+
+        <section id="logNreg">
+
+            <div id="bar_cont">
+                <div id="bar"></div>
+            </div>
+
+            <form id="loginBoxes" action="./Main Page/index.html" method="get">
+                
+                        <label for="uname"><b>username</b></label>
+                        <input id="username" type="text" name="uname" required>
+                    
+                        <label for="psw"><b>password</b></label>
+                        <input type="password" name="psw">
+                
+                        <p class="psw">forgot <a href="#">password?</a></p>
+                    
+ 
+                       <a href="./Main Page/index.html"><button id="submit" type="submit">login</button></a>
+                    
+
+                    <p id="scdRegister">Don't have an account yet? <a href="#">Register.</a></p>
+
+            </form>
+
+            <form id="registerBoxes" action="action_page.php">
+            
+                <label for="email"><b>email</b></label>
+                <input type="text" name="email" id="email" required>
+
+                <label for="uname"><b>username</b></label>
+                <input id="username" type="text" name="uname" required>
+            
+                <label for="psw"><b>password</b></label>
+                <input type="password" name="psw" id="psw" required>
+            
+                <button id="submit" type="submit" class="registerbtn">register</button>
+            
+                <p id="scdLogin">Already have an account? <a href="#">Sign in</a>.</p>
+                
+            </form>
+        </section>
+        
+
+</main>
+
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+
+	<script src="scripts/script.js"></script>
+</body>
+</html>
